@@ -1,0 +1,102 @@
+.container  
+  max-width: 950px
+  margin: 0 auto
+  
+
+.carousel
+  padding: 81px 0 82px 0
+
+.carousel__go
+  position: relative
+  width: 750px
+  margin: 0 auto
+    
+.slick-prev, .slick-next
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: -66px
+  border: none
+  background-color: #fff   
+  img
+    height: 40px
+    width: 30px
+  
+.slick-next
+  left: auto
+  right: -66px
+
+
+.slick-slide
+  img
+    width: 100%
+
+.catalog
+  &__wrapper
+    display: flex
+    justify-content: center
+    margin-bottom: 30px
+    
+  &__text
+    width: 220px
+    height: 50px
+    border: 2px solid #D0D0D0
+    transform: skew(-25deg)
+    text-align: center
+    font-weight: 500
+    font-size: 18px
+    line-height: 48px
+    text-transform: uppercase
+    transition: 0.3s all
+    margin: 0 5px
+    div
+      transform: skew(25deg)
+    &:hover
+      box-shadow: 3px 3px 20px red
+      border: none
+    &_active
+      color: white
+      background-color: red
+      border: none
+  
+  a
+    /** position: absolute **/
+    color: red
+  
+
+
+.catalog__content
+  width: 300px
+  border: 2px solid #D0D0D0
+  overflow: hidden
+
+.catalog__content_wr
+  display: flex
+  width: calc(200% + 20px)
+  
+
+.catalog__item
+  margin-top: 20px
+  width: 50%
+  margin-left: 20px
+  transition: 0.5s all
+  transform: translateX(0%)
+  &_active
+    transform: translateX(-100%)
+
+
+.catalog__item2
+  margin-top: 20px
+  width: 50%
+  margin-left: 20px
+  transition: 0.5s all
+  transform: translateX(0%)
+  &_active
+    transform: translateX(-100%)
+
+
+.catalog_cont
+  display: none
+  &_active
+    display: flex
+
